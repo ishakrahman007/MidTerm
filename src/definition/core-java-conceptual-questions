@@ -1,85 +1,311 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.
-
-
-
+A. A programming language is a system of notation for writing computer programs.
 
 What jdk contains or composed of and define each components?
-A.
-
-
-
-
+A. The JDK includes the Java Runtime Environment (JRE), an interpreter (java),
+a compiler (javac), an archiver (jar), a documentation generator (javadoc),
+and some other development tools. The Java Runtime Environment itself consists
+of the Java Virtual Machine (JVM), supporting files, and core classes.
 
 What is IDE?
-A.
-
-
+A. An integrated development environment (IDE) is a software application
+that helps programmers develop software code efficiently. It increases
+developer productivity by combining capabilities such as software editing,
+building, testing, and packaging in an easy-to-use application.
 
 What are the IDEs available in the market to support java?
-A.
-
-
+A. There are many Integrated Development Environments (IDEs) available in the
+market that support Java. Some of the popular IDEs for Java development are:
+Eclipse: Eclipse is a popular open-source IDE for Java development. It is highly extensible and can be
+customized with a wide range of plugins.
+IntelliJ IDEA: IntelliJ IDEA is a commercial Java IDE developed by JetBrains.
+It provides advanced coding assistance, code analysis, and debugging tools.
+NetBeans: NetBeans is a free and open-source Java IDE that supports Java, HTML, CSS, and JavaScript.
+It comes with a wide range of features and plugins.
+JDeveloper: JDeveloper is a free IDE developed by Oracle that supports Java,
+XML, SQL, and other technologies. It provides visual development tools and code profiling tools.
+BlueJ: BlueJ is a free and open-source IDE designed for beginners in Java development.
+It provides a simplified interface and interactive tools for learning Java.
+These are just a few of the popular IDEs available in the market for Java development.
+Other notable IDEs include JGrasp, DrJava, and CodeWarrior.
 
 Explain the entire java life cycle.
+Life cycle of a java program tells us what happens right from the point when we type
+source code in a text editor to the point that source code is converted into machine code (0's and 1's).
+
 what is class?
+A class is a blueprint or template for creating objects that share common properties and methods.
+
 What is object?
+An object is an instance of a class that has its own set of properties and methods.
+
 What is the entry point of an application?
+An application entry point identifies a resource that is an access point to an application.
+Application entry points are used to control users' access to different versions of
+an application that is deployed on a platform.
+
 Why main is static?
+It is not possible to invoke a function without constructing an instance of its class,
+as there is no object of a class when the JVM starts. The main() function is declared
+static such that the class can be loaded by JVM into the main memory.
+
 Which class is the superclass of all classes?
+Object class is the root or superclass of the class hierarchy, which is present in java.
+lang package. All predefined classes and user-defined classes are the subclasses from Object class.
+
 What is difference between path and classpath variables?
+path variable is used to set the path for all Java software tools like javac.exe,
+java.exe, javadoc.exe, and so on. classpath variable is used to set the path for java classes.
+
 What is the difference between an Interface and Abstract class?
+An abstract class can have both abstract and non-abstract methods,
+while an interface can only have abstract methods.
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+No, we can't create an object of an abstract class. But we can create a reference variable of
+an abstract class. The reference variable is used to refer to the objects of
+derived classes (subclasses of abstract class).
+
 what is Access Specifier?
+Access modifiers or Access Specifier are keywords used to
+set the accessibility of a class, method, or variable.
+
 What is OOP ? Define each feature of java OOP.
+OOP stands for Object-Oriented Programming, which is a way of organizing and designing software using objects.
+- Abstraction is the practice of hiding unnecessary details while showing essential information,
+and is achieved through abstract classes and interfaces.
+- Polymorphism is the ability of an object to take on many forms and can be achieved through method overloading and overriding.
+- Inheritance is a way of creating new classes that reuse code from existing classes.
+- Encapsulation is the practice of hiding internal data and methods from the outside world, and is achieved through access modifiers.
+
 What is Java Package and which package is imported by default?
+In Java, two packages java. lang package and a no-name package (also called default package)
+are imported by default in all the classes of Java.
+
 What is API? Name list of API that you have used so far.
+APIs are mechanisms that enable two software components to communicate with each other
+using a set of definitions and protocols. For example, the weather bureau's software system
+contains daily weather data. The weather app on your phone “talks” to this system via APIs
+and shows you daily weather updates on your phone.
+
 Does java support multiple inheritance, explain why or why not?
+The Java programming language supports multiple inheritance of type, which is the ability of a
+class to implement more than one interface. An object can have multiple types: the type of its own class
+and the types of all the interfaces that the class implements.
+
 What is method overloading and when it happens?
+Method overloading is the practice of defining multiple methods with the same name but different parameters.
+
 Explain exceptions in java and how to handle it.
+The try-catch is the simplest method of handling exceptions. Put the code you want to run in the try block,
+and any Java exceptions that the code throws are caught by one or more catch blocks. This method will catch
+any type of Java exceptions that get thrown. This is the simplest mechanism for handling exceptions.
+
 What is static keyword in java? How it has been used in variables and methods ?
+In Java, static keyword is mainly used for memory management. It can be used with variables, methods,
+blocks and nested classes. It is a keyword which is used to share the same variable or method of a given class.
+Basically, static is used for a constant variable or a method that is same for every instance of a class.
+
 What is final and how it has been used variables and methods?
+The final keyword is a non-access modifier used for classes, attributes and methods, which makes them
+non-changeable (impossible to inherit or override). The final keyword is useful when you want a variable
+to always store the same value, like PI (3.14159...). The final keyword is called a "modifier".
+
 What is final, finally and finalize?
+- final is a keyword used in Java to restrict the modification of a variable, method, or class.
+- finally is a block used in Java to ensure that a section of code is always executed, even if an exception is thrown.
+- finalize is a method in Java used to perform cleanup processing on an object before it is garbage collected.
+
 What is a constructor ?
+A constructor is a special method that is called when an object is created and is used to initialize its properties.
+
 Can we have multiple constructors in a class?
+A class can have multiple constructors that assign the fields in different ways. Sometimes it's beneficial to
+specify every aspect of an object's data by assigning parameters to the fields, but other times it might be
+appropriate to define only one or a few.
+
 If we don't have a constructor declared, what is called during the object creation?
+If a class does not explicitly declare any, the Java compiler automatically provides a
+no-argument constructor, called the default constructor.
+
 What is "this" keyword in java ?
+- This keyword can be used to refer current class instance variable.
+- This keyword can be used to invoke current class method (implicitly).
+- this() can be used to invoke current class constructor.
+- This can be passed as an argument in the method call.
+- This can be passed as argument in the constructor call.
+- This can be used to return the current class instance from the method.
+
 What is "super" keyword in java? How many possible way can you use?
+The super keyword refers to superclass (parent) objects. It is used to call superclass methods,
+and to access the superclass constructor. The most common use of the super keyword is to
+eliminate the confusion between superclasses and subclasses that have methods with the same name.
+
 What is JVM stand for ?
+A Java virtual machine (JVM), an implementation of the Java Virtual Machine Specification,
+interprets compiled Java binary code (called bytecode) for a computer's processor (or "hardware platform")
+so that it can perform a Java program's instructions.
+
 Is JVM platform independent?
+JVM is undoubtedly platform-independent. Similar to how it varies depending on the surroundings.
+For instance, MAC and Linux have a different JVM than Windows. It supports portability as one
+of its key features since its code's portable bytecode makes it platform-independent.
+
 What version of java are you using?
+java 11.0.17 2022-10-18 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.17+10-LTS-269)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.17+10-LTS-269, mixed mode)
+
 What is JAR stand for ?
+JAR stands for Java ARchive. It's a file format based on the
+popular ZIP file format and is used for aggregating many files into one.
+
 What is the difference between JDK and JVM?
+The JVM is an abbreviation for Java Virtual Machine. The JDK (Java Development Kit)
+is a software development kit that develops applications in Java. Along with JRE,
+the JDK also consists of various development tools (Java Debugger, JavaDoc, compilers, etc.)
+
 What is the difference between JVM and JRE?
+And now, for the differences: JDK is the development platform, while JRE is for execution.
+JVM is the foundation, or the heart of Java programming language, and ensures the program's
+Java source code will be platform-agnostic. JVM is included in both JDK and JRE – Java programs won't run without it.
+
 What is compile time and run time?
+Compile time is the period when the programming code (such as C#, Java, C, Python)
+is converted to the machine code (i.e. binary code). Runtime is the period of time when a
+program is running and generally occurs after compile time.
+
 What is heap?
+The Java heap is the area of memory used to store objects instantiated by applications running on the JVM.
+When the JVM is started, heap memory is created and any objects in the heap can be shared between threads as
+long as the application is running.
+
 How java manage it's memory?
+Memory Management in Java refers to allocating and deallocating memory to java objects which reside in
+areas called Stack and Heap. Java has an automatic memory deallocation system known as Garbage Collector.
+
 What is the difference between String, StringBuffer and StringBuilder?
+String is immutable whereas StringBuffer and StringBuilder are mutable classes. StringBuffer is
+thread-safe and synchronized whereas StringBuilder is not. That's why StringBuilder is faster than StringBuffer.
+
 What is Singleton class?
+A singleton is a class that allows only a single instance of itself to be created and gives access to that
+created instance. It contains static variables that can accommodate unique and private instances of itself.
+It is used in scenarios when a user wants to restrict instantiation of a class to only one object.
+
 What is Serialization and Deserialization?
+Serialization in simple terms means converting an object into a sequence of bytes, deserialization is
+exactly the opposite. In deserialization, an object is reconstructed back from the sequence of bytes.
+
 when to use transient variable in java?
+Transient in Java is used to mark the member variable not to be serialized when it is persisted to
+streams of bytes. This keyword plays an important role to meet security constraints in Java.
+It ignores the original value of a variable and saves the default value of that variable data type.
+
 Difference between while and do..while loop?
+What is the difference between while and do while loop? The difference between while and do while
+loop is that in the while loop the condition is checked prior to executing any statements whereas
+in the case of do while loop, statements are run at least once, and then the condition is verified.
+
 What is Enum?
+An enum type is a special data type that enables for a variable to be a set of predefined constants.
+The variable must be equal to one of the values that have been predefined for it.
+Common examples include compass directions (values of NORTH, SOUTH, EAST, and WEST) and the days of the week.
+
 What is Iterator?
+Iterator in Java is an object used to cycle through arguments or elements present in a collection.
+It is derived from the technical term “iterating,” which means looping through. Generally, an
+iterator in Java is used to loop through any collection of objects.
+
 Which one will take more memory, an int or Integer?
+The Integer class is a wrapper class for the int, while the int is not a class at all.
+The Integer class allows conversion to float, double, long and short, while the int doesn't.
+The Integer consumes slightly more memory than the 32-bit Java int.
+
 Why is String Immutable in Java?
+The String is immutable in Java because of the security, synchronization and concurrency,
+caching, and class loading. The reason of making string final is to destroy the immutability
+and to not allow others to extend it. The String objects are cached in the String pool, and it makes the String immutable.
+
 What is constructor chaining in Java?
+Constructor chaining refers to the ability to call a constructor inside another constructor.
+You can use a constructor chain either within the same class or even with another one. For the latter,
+the constructor should be through inheritance from the super class.
+
 The difference between Serial and Parallel Garbage Collector?
+The only difference between serial and parallel garbage collector is that serial garbage collector uses a
+single thread for garbage collection process while the parallel garbage collector uses multiple threads for
+the garbage collection. Parallel GC can use multiple CPUs to speed up the application throughput
+
 What is JIT stands for?
+What is Just-in-Time (JIT)? Just-in-time, or JIT, is an inventory management method in which goods are
+received from suppliers only as they are needed.
+
 Explain Java Heap space and Garbage collection?
+Java objects reside in an area called the heap. The heap is created when the JVM starts up and may increase or
+decrease in size while the application runs. When the heap becomes full, garbage is collected. During the garbage
+collection objects that are no longer used are cleared, thus making space for new objects.
+
 Can you guarantee the garbage collection process?
+No, not at all. In languages without garbage collection, the programmer (or a library he uses) is
+responsible for making requests for memory and for returning the allocated memory for "recycling".
+there are no guarantees that the memory would be available when it is requested.
+
 What is the difference between stack and heap in Java?
+Heap memory is used by all the parts of the application whereas stack memory is used only by one thread of execution.
+Whenever an object is created, it's always stored in the Heap space and stack memory contains the reference to it.
+
 What is reflection in java and why is it useful?
+Reflection is a feature in the Java programming language. It allows an executing Java program to examine or "introspect"
+upon itself, and manipulate internal properties of the program. For example, it's possible for a Java class to obtain
+the names of all its members and display them.
+
 what is multithreading in java?
+Multithreading is a programming concept in which the application can create a small unit of tasks to execute in parallel.
+If you are working on a computer, it runs multiple applications and allocates processing power to them. A simple program
+runs in sequence and the code statements execute one by one.
+
 What is the use of synchronization in Java?
+Synchronization in java is the capability to control the access of multiple threads to any shared resource.
+In the Multithreading concept, multiple threads try to access the shared resources at a time to produce inconsistent
+results. The synchronization is necessary for reliable communication between threads.
+
 What is Framework?
+Java Framework is the body or platform of pre-written codes used by Java developers to develop Java applications or
+web applications. In other words, Java Framework is a collection of predefined classes and functions that is used
+to process input, manage hardware devices interacts with system software.
+
 What are the testing Framework available in java?
+There are several testing frameworks available in Java. Here are some of the most popular ones:
+JUnit: JUnit is the most widely used testing framework in Java. It is used for unit testing and is supported by most of the IDEs like Eclipse, NetBeans, and IntelliJ IDEA.
+TestNG: TestNG is a testing framework that is inspired by JUnit and NUnit. It supports more flexible and powerful tests.
+Mockito: Mockito is a mocking framework for unit tests in Java. It is used to create mock objects for classes that are not fully implemented yet.
+Selenium: Selenium is a web application testing framework that can be used to test web applications across different browsers and platforms.
+Cucumber: Cucumber is a tool that supports behavior-driven development (BDD) and allows the writing of test cases in plain English language.
+Arquillian: Arquillian is a framework that allows testing of Java applications in containers such as JBoss and Tomcat.
+Spock: Spock is a testing framework that is used to write tests in Groovy programming language. It combines the best features of JUnit, Mockito, and other testing frameworks.
+These are just some of the most popular testing frameworks available in Java. Depending on the requirements of the project, other testing frameworks may also be used.
+
 Difference between jUnit and testNG?
+JUnit is a framework that is open-source and may be used to write and trigger tests. TestNG is a Java-based framework that provides
+an improved way to run tests. Advanced annotation is not supported. It is capable of supporting more advanced annotation.
+
 What are the dependencies for this project?
+How to Identify Project Dependencies. In order to identify project dependencies, you must first create a map of
+project tasks. Next, look for tasks that the team cannot perform until they receive information or deliverables
+from a previous task. Those tasks are dependent.
+
 what is dependency injection in java?
+Dependency Injection in Java is a way to achieve Inversion of control (IoC) in our application by moving objects
+binding from compile time to runtime. We can achieve IoC through Factory Pattern, Template Method Design Pattern,
+Strategy Pattern and Service Locator pattern too.
+
 What is static binding and dynamic binding?
+Static binding does its work during compile time and has better performance. Static binding can be applied using
+function overloading or operator overloading. Dynamic binding works during run time & is more flexible.
+Dynamic binding can be accomplished using virtual functions.
 
 
 

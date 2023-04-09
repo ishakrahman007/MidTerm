@@ -1,6 +1,6 @@
 package algorithm;
 
-public class Sort {
+public class  Sort {
 
     long executionTime = 0;
 	/*

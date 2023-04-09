@@ -8,6 +8,21 @@ public class Pattern {
 		 *
 		 *
 		 */
+		int n=100;
+		int count = 0;
+		while(n>=0){
+			System.out.print(n+" ");
+			count++;
+			if(count%11==0){
+				n-=2;
+			}
+			else if(count%10==0){
+				n-=3;
+			}
+			else{
+				n-=1;
+			}
+		}
 		
 
 
