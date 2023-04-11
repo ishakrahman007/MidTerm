@@ -1,38 +1,34 @@
 package datastructure;
+import databases.ConnectToSqlDB;
 
-import java.util.HashMap;
-import java.util.Iterator;
-
+import java.util.*;
 public class UseMap {
 
-	public static void main(String[] args) throws Exception{
-		/*
-		 * Demonstrate how to use Map that includes storing and retrieving elements.
-		 * Add List<String> into a Map. Like, Map<String, List<string>> list = new HashMap<String, List<String>>();
-		 * Use For Each loop and while loop with Iterator to retrieve data.
-		 *
-		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
-		 */
+	public static void main(String[] args) throws Exception {
+
 
 		HashMap<Object, Object> map = new HashMap<>();
-		map.put(8454, "lamia");
-		map.put(4567, "azar");
-		map.put(7898, "rahim");
+		map.put(2120, "ABU");
+		map.put(2038, "RANA");
+		map.put(8467, "BURI");
 
-		// Retrieving "Keys" & "Values" using an Iterator
-		Iterator<Object> mapIter = map.keySet().iterator();
+
+		Iterator<Object> mapIt = map.keySet().iterator();
 		Object key;
-		while (mapIter.hasNext()) {
-			key = mapIter.next();
+		while (mapIt.hasNext()) {
+			key = mapIt.next();
 			System.out.println("KEY: " + key);
 			System.out.println("VALUE: " + map.get(key));
 		}
 
+
 		String tableName = "`test_hash_map`";
-		SharedStepsDatabase sql = new SharedStepsDatabase();
+		ConnectToSqlDB sql = new ConnectToSqlDB();
+
+
+
 
 
 
 	}
-
 }
